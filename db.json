@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": "3a75",
+      "fullName": "Niranjan Prajapati",
+      "email": "prajapatiniranjan8@gmail.com",
+      "password": "NNNNNN"
+    },
+    {
+      "id": "e875",
+      "fullName": "Mahi Verma",
+      "email": "mahiverma@gmail.com",
+      "password": "mmmmmm"
+    }
+  ],
+  "flights": [
+    {
+      "id": "be6e",
+      "flightNumber": "SD123FB",
+      "departure": "Bhopal",
+      "arrival": "Delhi",
+      "date": "2024-12-12",
+      "seats": "45"
+    },
+    {
+      "id": "7b64",
+      "flightNumber": "SD123F",
+      "departure": "Delhi",
+      "arrival": "goa",
+      "date": "2025-02-11",
+      "seats": "22",
+      "price": "3456"
+    }
+  ],
+  "passengers": [
+    {
+      "id": "a23d",
+      "name": "Mahi Verma",
+      "flightNumber": "SD123F",
+      "seat": "22",
+      "status": "Pending"
+    },
+    {
+      "id": "aa41",
+      "name": "Bipin Singh",
+      "flightNumber": "SD123F",
+      "seat": "22",
+      "status": "Confirmed"
+    },
+    {
+      "id": "3656",
+      "name": "Anhsul Shivahare",
+      "flightNumber": "SD123FB",
+      "seat": "12",
+      "status": "Confirmed"
+    },
+    {
+      "id": "c767",
+      "name": "Mahi Niranjan",
+      "flightNumber": "SD123FB",
+      "seat": "12",
+      "status": "Confirmed"
+    }
+  ]
+}

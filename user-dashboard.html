@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Airline Booking</title>
+    <link rel="stylesheet" href="./css/stye.css">
+<style>
+    body {
+        position: relative;
+        background-image: url('./img/istockphoto-924694848-612x612.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        height: 100vh;
+        color: white;
+    }
+
+    body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(20px);
+        z-index: -1;
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Dashboard Header -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Flight Search Section -->
+    <section class="flight-search">
+        <h2>Search for Flights</h2>
+        <form id="flightSearchForm">
+            <label for="departure">From</label>
+            <input type="text" id="departure" placeholder="Enter departure city" required>
+
+            <label for="arrival">To</label>
+            <input type="text" id="arrival" placeholder="Enter destination city" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Search Flights</button>
+        </form>
+
+        <div id="flightsList" class="flights-list">
+            <!-- Matching flights will be displayed here -->
+        </div>
+    </section>
+    <!-- Passenger Booking Form -->
+    <section class="booking-form">
+        <h2>Book a Flight</h2>
+        <form id="bookingForm">
+            <label for="passengerName">Name</label>
+            <input type="text" id="passengerName" placeholder="Enter your name" required>
+    
+            <label for="flightNumber">Flight Number</label>
+            <input type="text" id="flightNumber" placeholder="Enter Flight Number" required>
+    
+            <label for="seat">Seat</label>
+            <input type="text" id="seat" placeholder="Select Seat" required>
+    
+            <label for="status">Status</label>
+            <select id="status" required>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Pending">Pending</option>
+            </select>
+    
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+<footer>
+    <div class="footer-container">
+        <!-- Contact Information & Customer Support -->
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><strong>Customer Support:</strong></p>
+            <p>Phone: +1-800-123-4567</p>
+            <p>Email: <a href="mailto:support@airline.com">support@airline.com</a></p>
+            <p><strong>Live Chat:</strong> Available 24/7</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Book a Flight</a></li>
+                <li><a href="#">Manage Booking</a></li>
+                <li><a href="#">Flight Status</a></li>
+                <li><a href="#">Check-in Online</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Travel Information -->
+        <div class="footer-section info">
+            <h3>Travel Information</h3>
+            <ul>
+                <li><a href="#">Travel Guides</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Baggage Information</a></li>
+            </ul>
+        </div>
+
+        <!-- About Us -->
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press & News</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile App Section -->
+        <div class="footer-section app">
+            <h3>Mobile App</h3>
+            <p>Download Our App:</p>
+            <div class="app-links">
+                <a href="#"><img src="google-play-icon.png" alt="Google Play" /></a>
+                <a href="#"><img src="app-store-icon.png" alt="App Store" /></a>
+            </div>
+            <p>Download our app for easier flight booking and tracking on the go!</p>
+        </div>
+    </div>
+
+    <!-- Legal Disclaimer -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Airline Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="./js/user-dashboard.js"></script>
+</body>
+
+</html>

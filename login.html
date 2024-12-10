@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Airline Booking</title>
+        <link rel="stylesheet" href="./css/stye.css">
+        <style>
+            body {
+                background-image: url('./img/istockphoto-175544661-612x612.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0;
+                height: 100vh;
+            }
+        </style>
+
+</head>
+
+<body>
+
+    <!-- Login Form Section -->
+    <section class="login-form">
+        <h1>Login to Your Account</h1>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+    </section>
+
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>
