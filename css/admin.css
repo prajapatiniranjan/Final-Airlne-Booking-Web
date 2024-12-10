@@ -72,30 +72,35 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
+/* Updated Input Group Styling */
 .input-group {
-    margin-bottom: 15px;  /* Adjust margin to reduce space between label and input */
+    margin-bottom: 15px; /* Space between each input field */
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
 }
 
 .input-group label {
     font-size: 14px;
     color: #2c3e50;
-    margin-bottom: 5px;  /* Reduce the space between label and input */
+    margin-bottom: 5px; /* Space between label and input */
     font-weight: 500;
 }
 
 .input-group input {
-    padding: 10px;  /* Reduced padding for a tighter fit */
+    padding: 10px; 
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 6px;
     transition: border-color 0.3s;
-    margin-left: 30%;
+    width: 100%; /* Ensure inputs stretch across the container */
+    margin-left: 0; /* Remove unwanted margin */
 }
 
 .input-group input:focus {
     border-color: #3498db;
     outline: none;
 }
+GIT 
 
 .btn-submit {
     background-color: #3498db;
